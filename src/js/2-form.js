@@ -9,7 +9,7 @@ let formData = {
 
 const savedData = localStorage.getItem(STORAGE_KEY);
 
-if (savedData === !null) {
+if (savedData !== null) {
   const parsedData = JSON.parse(savedData);
 
   formData = parsedData;
